@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="FedNP² discovers relevant neighboring teachers and learns their combination for federated positive-unlabeled learning.">
+  <title>FedNP² — Learn from the right neighbors</title>
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav aria-label="Main navigation">
+    <a class="brand nav-brand" href="#home"><span class="brand-mark">F</span><span>FedNP<sup>2</sup></span></a>
+    <div class="nav-links">
+      <a href="#problem">Overview</a>
+      <a href="#method">Method</a>
+      <a href="#results">Results</a>
+      <a href="#ablation">Ablation</a>
+      <a href="#analysis">Analysis</a>
+      <a href="#resources">Resources</a>
+    </div>
+    <a class="nav-resource" href="https://github.com/FedNP2-team/FedNP2-code" target="_blank" rel="noopener noreferrer">Code <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
+  </nav>
+
+  <main>
+    <header id="home">
+      <div class="hero-copy">
+        <p class="hero-name">FedNP<sup>2</sup><span>.</span></p>
+        <h1>Learn from<br>the right <em>neighbors.</em></h1>
+        <p class="hero-subtitle">Neighborhood-aware federated<br>positive–unlabeled learning.</p>
+        <p class="intro">Discover relevant teachers, learn their combination with local PU risk, and turn their predictions into soft supervision.</p>
+        <div class="actions">
+          <a class="primary" href="#method">Explore the method <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
+          <a class="secondary" href="#results">View results <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="assets/neighborhood.svg" alt="Conceptual illustration of neighboring teachers combining predictions into a personalized proxy that supplies soft targets to a target client.">
+      </div>
+    </header>
+
+    <div class="method-ribbon" aria-label="Method overview">
+      <a href="#method" data-jump="0"><span class="ribbon-icon">◎</span> Discover relevant neighbors <span>↗</span></a>
+      <a href="#method" data-jump="1"><span class="ribbon-icon">≋</span> Learn teacher contributions <span>↗</span></a>
+      <a href="#method" data-jump="2"><span class="ribbon-icon">↻</span> Refresh soft supervision <span>↗</span></a>
+    </div>
+
+    <section id="problem">
+      <div class="section-head">
+        <h2>Shared learning.<br><em>Different local worlds.</em></h2>
+        <p>Clients observe a few labeled positives and a mixture of unlabeled positives and negatives. Their data distributions shape which teachers can help.</p>
+      </div>
+      <div class="problem-pair">
+        <article>
+          <h3>Different class balances</h3>
+          <p>Heterogeneous positive priors can lead to different prediction biases.</p>
+          <div class="balance-row"><span>Client A</span><div class="balance"><i style="width:20%"></i></div></div>
+          <div class="balance-row"><span>Client B</span><div class="balance"><i style="width:65%"></i></div></div>
+          <p class="legend"><i class="positive-dot"></i> Positive <i class="negative-dot"></i> Negative</p>
+        </article>
+        <article>
+          <h3>Different unlabeled populations</h3>
+          <p>Feature shifts can change pseudo-label quality even among clients with similar positive priors.</p>
+          <div class="distribution" role="img" aria-label="Conceptual feature distributions shifted between two clients">
+            <svg viewBox="0 0 500 95" aria-hidden="true">
+              <path d="M12 79H485" stroke="#c9cbd4"/>
+              <path d="M35 78C81 78 83 12 143 12S203 78 264 78" fill="#dacbe9" fill-opacity=".65" stroke="#a088ba" stroke-width="2"/>
+              <path d="M171 78C229 78 241 24 305 24S380 78 446 78" fill="#d2dfe3" fill-opacity=".65" stroke="#8aa9b5" stroke-width="2"/>
+              <text x="142" y="58" text-anchor="middle">Client A</text><text x="306" y="62" text-anchor="middle">Client B</text>
+            </svg>
+          </div>
+        </article>
+      </div>
+      <figure>
+        <button class="zoom" data-image="assets/problem.png" aria-label="Open the problem figure"><img src="assets/problem.png" loading="lazy" alt="Federated positive-unlabeled learning with heterogeneous positive priors and feature shift."></button>
+        <figcaption>The federated PU setting and the sources of supervision mismatch.</figcaption>
+      </figure>
+    </section>
+
+    <section id="method">
+      <div class="section-head">
+        <h2>From relevant neighbors<br>to <em>local supervision.</em></h2>
+        <p>Three connected steps turn cross-client predictions into a personalized source of supervision.</p>
+      </div>
+      <div class="framework">
+        <h3>Complete <em>framework.</em></h3>
+        <figure>
+          <button class="zoom" data-image="assets/method.png" aria-label="Open the complete method figure"><img src="assets/method.png" loading="lazy" alt="Complete FedNP² framework with rotating probes, PU-risk guided teacher combination and cached soft supervision."></button>
+          <figcaption>Figure 2 · The complete FedNP² framework. PU warm-up is followed by CSS-assisted training with periodic refresh and FedAvg aggregation.</figcaption>
+        </figure>
+      </div>
+      <div class="steps" aria-label="Method stages">
+        <button aria-pressed="true" data-step="0"><span>01</span> Discover neighbors</button>
+        <button aria-pressed="false" data-step="1"><span>02</span> Combine teachers</button>
+        <button aria-pressed="false" data-step="2"><span>03</span> Refine locally</button>
+      </div>
+      <div class="method-detail">
+        <div id="stage-visual" class="stage-visual"></div>
+        <div class="stage-copy" aria-live="polite">
+          <h3 id="step-title"></h3>
+          <p id="step-text"></p>
+          <div id="equation" class="equation"></div>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <span>PU warm-up</span><i>→</i><span>Build the first cache</span><i>→</i><span>Train with CSS</span><i>↻</i><span>Refresh & repeat</span>
+      </div>
+      <p class="note">A refreshed cache is used from the next training round.</p>
+    </section>
+
+    <section id="results">
+      <div class="section-head">
+        <h2>Across datasets.<br><em>Across local distributions.</em></h2>
+        <p>Explore accuracy across four benchmarks and three levels of client heterogeneity.</p>
+      </div>
+      <div class="results-panel">
+        <div id="datasets" class="tabs" aria-label="Dataset"></div>
+        <div class="dataset-heading"><h3 id="dataset-title">CIFAR-10</h3><span>Test accuracy (%) ↑</span></div>
+        <div class="comparison-shell">
+          <div class="comparison-main">
+            <div class="comparison-toolbar"><h4>Compare methods</h4><label>Heterogeneity <select id="eta"><option value="0.25">η = 0.25</option><option value="0.5" selected>η = 0.50</option><option value="0.75">η = 0.75</option></select></label></div>
+            <div id="comparison-cards" class="comparison-cards"></div>
+          </div>
+          <aside class="comparison-insight" aria-live="polite"><p>Lead over next best</p><div id="result-gap"></div></aside>
+        </div>
+        <div class="table-wrap">
+          <table class="main-table"><thead><tr><th scope="col">Method</th><th scope="col">η = 0.25</th><th scope="col">η = 0.50</th><th scope="col">η = 0.75</th></tr></thead><tbody id="rows"></tbody></table>
+        </div>
+        <div class="table-legend"><span class="best-value">Bold = best mean</span><span class="second-value">Underline = second-best mean</span></div>
+        <p class="data-note">Table 1 · Mean ± standard deviation over three seeds. Smaller η indicates stronger heterogeneity.</p>
+      </div>
+    </section>
+
+      <section id="ablation">
+        <div class="experiment-heading"><div><h3>Every component <em>counts.</em></h3></div><span class="setting-label">CIFAR-10 & USPS · η = 0.5</span></div>
+        <figure class="ablation-figure">
+          <button class="zoom" data-image="assets/ablation.png" aria-label="Enlarge ablation figure"><img src="assets/ablation.png" loading="lazy" alt="Ablation accuracy on CIFAR10 and USPS for Rand, Uniform, Static and Full."></button>
+          <figcaption>Figure 3 · The full method has the highest accuracy on both datasets.</figcaption>
+        </figure>
+        <div class="variant-key"><span><b>Rand</b> Random neighbors</span><span><b>Uniform</b> Equal teacher weights</span><span><b>Static</b> Fixed cache</span><span><b>Full</b> FedNP²</span></div>
+      </section>
+
+
+    <section id="analysis">
+      <div class="section-head"><h2>A closer look.<br><em>Inside the method.</em></h2><p>Supervision quality, periodic refresh, and sensitivity to the choices behind FedNP².</p></div>
+      <div class="analysis-jumps" aria-label="Explore analysis sections">
+        <a href="#supervision">Supervision <span>↗</span></a>
+        <a href="#training">Refresh <span>↗</span></a>
+        <a href="#sensitivity">Sensitivity <span>↗</span></a>
+        <a href="#representation">Representation <span>↗</span></a>
+        <a href="#qualitative">Visual examples <span>↗</span></a>
+      </div>
+
+      <article class="experiment-block" id="supervision">
+        <div class="experiment-heading"><div><h3>Better <em>supervision.</em></h3><p>Compare probability quality and balanced accuracy at the final refresh.</p></div><span class="setting-label">Round 40 · η = 0.5 · three seeds</span></div>
+        <div class="quality-grid">
+          <div><h4>CIFAR-10</h4><table class="quality-table"><thead><tr><th scope="col">Source</th><th scope="col">Brier ↓</th><th scope="col">BA (%) ↑</th></tr></thead><tbody>
+            <tr><th scope="row">Local model</th><td>0.162 ± 0.005</td><td>67.3 ± 1.8</td></tr>
+            <tr><th scope="row">Global model</th><td>0.146 ± 0.005</td><td>74.2 ± 0.5</td></tr>
+            <tr><th scope="row">Uniform neighbors</th><td>0.154 ± 0.010</td><td>74.7 ± 1.6</td></tr>
+            <tr class="own-row"><th scope="row">PU-risk-weighted PP</th><td class="best-value">0.143 ± 0.008</td><td class="best-value">82.2 ± 0.9</td></tr>
+          </tbody></table></div>
+          <div><h4>USPS</h4><table class="quality-table"><thead><tr><th scope="col">Source</th><th scope="col">Brier ↓</th><th scope="col">BA (%) ↑</th></tr></thead><tbody>
+            <tr><th scope="row">Local model</th><td>0.133 ± 0.030</td><td>63.3 ± 11.7</td></tr>
+            <tr><th scope="row">Global model</th><td>0.142 ± 0.016</td><td>70.2 ± 11.6</td></tr>
+            <tr><th scope="row">Uniform neighbors</th><td>0.123 ± 0.038</td><td>67.7 ± 14.1</td></tr>
+            <tr class="own-row"><th scope="row">PU-risk-weighted PP</th><td class="best-value">0.115 ± 0.040</td><td class="best-value">85.8 ± 5.0</td></tr>
+          </tbody></table></div>
+        </div>
+        <p class="experiment-takeaway">Table 2 · PU-risk-weighted PP achieves the lowest mean Brier score and highest mean balanced accuracy on both datasets.</p>
+        <p class="data-note">Both neighbor combinations use the same teacher snapshots, candidates, and local unlabeled fitting samples.</p>
+      </article>
+
+      <article class="experiment-block" id="training">
+        <div class="experiment-heading"><div><h3>When to <em>refresh?</em></h3><p>Follow training over communication rounds and compare refresh intervals.</p></div></div>
+        <div class="plot-tabs" aria-label="Refresh experiment">
+          <button data-refresh="training" aria-pressed="true">Training dynamics</button>
+          <button data-refresh="interval" aria-pressed="false">Refresh interval</button>
+        </div>
+        <figure>
+          <button class="zoom crop-figure" id="refresh-figure" data-image="assets/refresh.png" aria-label="Enlarge the complete training and refresh figure"><img src="assets/refresh.png" loading="lazy" alt="Full and Static training curves for CIFAR10 and Imagenette."></button>
+          <figcaption id="refresh-caption">Figure 4a–b · Training runs for 50 rounds. After 20 warm-up rounds, Full refreshes CSS at the end of rounds 30 and 40.</figcaption>
+        </figure>
+      </article>
+
+      <article class="experiment-block" id="sensitivity">
+        <div class="experiment-heading"><div><h3>Room to <em>vary.</em></h3><p>Inspect neighborhood size, active probe size, and distillation weight on CIFAR-10.</p></div></div>
+        <figure class="sensitivity-figure">
+          <button class="zoom" data-image="assets/sensitivity.png" aria-label="Enlarge sensitivity analysis"><img src="assets/sensitivity.png" loading="lazy" alt="CIFAR10 sensitivity curves for neighbors M, probe size B and maximum distillation weight, each with its own parameter row."></button>
+          <figcaption>Figure 5 · CIFAR-10, η = 0.5. Each curve varies one parameter along its matching axis row. Defaults are M = 10, B = 500, and λ<sub>max</sub> = 0.2.</figcaption>
+        </figure>
+      </article>
+
+      <article class="experiment-block" id="representation">
+        <div class="experiment-heading"><div><h3>Where to find <em>neighbors.</em></h3><p>Compare the representations used for probe-based neighbor discovery.</p></div><span class="setting-label">η = 0.5</span></div>
+        <div class="representation-grid"><div><h4>CIFAR10</h4><table class="representation-table"><thead><tr><th scope="col">Representation</th><th scope="col">ACC ↑</th><th scope="col">F1 ↑</th><th scope="col">AUC ↑</th></tr></thead><tbody><tr><th scope="row">Layer2-GAP</th><td>81.78</td><td>80.54</td><td>87.86</td></tr><tr><th scope="row">Layer3-GAP</th><td>81.78</td><td class="best-value">80.80</td><td class="best-value">88.17</td></tr><tr><th scope="row">Pre-classifier</th><td class="best-value">82.40</td><td>79.84</td><td>87.62</td></tr></tbody></table></div><div><h4>Imagenette</h4><table class="representation-table"><thead><tr><th scope="col">Representation</th><th scope="col">ACC ↑</th><th scope="col">F1 ↑</th><th scope="col">AUC ↑</th></tr></thead><tbody><tr><th scope="row">Layer2-GAP</th><td>70.45</td><td class="best-value">65.56</td><td class="best-value">78.78</td></tr><tr><th scope="row">Layer3-GAP</th><td>68.08</td><td>59.04</td><td>78.10</td></tr><tr><th scope="row">Pre-classifier</th><td class="best-value">70.89</td><td>63.96</td><td>78.30</td></tr></tbody></table></div><div><h4>USPS</h4><table class="representation-table"><thead><tr><th scope="col">Representation</th><th scope="col">ACC ↑</th><th scope="col">F1 ↑</th><th scope="col">AUC ↑</th></tr></thead><tbody><tr><th scope="row">Conv2-Flat</th><td>86.00</td><td>83.56</td><td>93.85</td></tr><tr><th scope="row">FC1-Act</th><td>86.35</td><td>83.63</td><td>93.81</td></tr><tr><th scope="row">Pre-classifier</th><td class="best-value">86.50</td><td class="best-value">83.96</td><td class="best-value">93.88</td></tr></tbody></table></div><div><h4>Letter</h4><table class="representation-table"><thead><tr><th scope="col">Representation</th><th scope="col">ACC ↑</th><th scope="col">F1 ↑</th><th scope="col">AUC ↑</th></tr></thead><tbody><tr><th scope="row">Input</th><td>75.33</td><td>78.17</td><td>84.63</td></tr><tr><th scope="row">Hidden1-Act</th><td class="best-value">76.15</td><td>78.33</td><td>84.80</td></tr><tr><th scope="row">Pre-classifier</th><td>75.55</td><td class="best-value">78.34</td><td class="best-value">85.03</td></tr></tbody></table></div></div><p class="experiment-takeaway">The pre-classifier representation has the highest ACC on CIFAR10, Imagenette, and USPS. The best representation varies with the dataset and metric.</p><p class="data-note">Table 3 · ACC, F1, and AUC (%). Bold indicates the best value for each dataset and metric.</p></article>
+      <article class="experiment-block" id="qualitative">
+        <div class="experiment-heading">
+          <div><h3>Predictions <em>up close.</em></h3><p>These selected examples are from the earlier FedNearPU study. See the main results table for overall performance.</p></div>
+        </div>
+        <div class="plot-tabs" aria-label="Qualitative dataset">
+          <button data-qualitative="cifar10" data-eta="0.25" aria-pressed="true">CIFAR-10</button>
+          <button data-qualitative="imagenette" data-eta="0.5" aria-pressed="false">Imagenette</button>
+          <button data-qualitative="usps" data-eta="0.5" aria-pressed="false">USPS</button>
+          <button data-qualitative="letter" data-eta="0.5" aria-pressed="false">Letter</button>
+        </div>
+        <figure>
+          <button class="zoom" id="qualitative-figure" data-image="assets/qualitative_cifar10.svg" aria-label="Enlarge selected CIFAR-10 test cases"><img src="assets/qualitative_cifar10.svg" loading="lazy" alt="Six selected CIFAR-10 test cases from the FedNearPU study."></button>
+          <figcaption id="qualitative-caption" aria-live="polite">CIFAR-10 · η = 0.25 · seed 0 · threshold 0.5.</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <section id="resources">
+      <div><h2>Explore FedNP<sup>2</sup>.</h2><p>Read the research. Inspect the implementation.</p></div>
+      <div class="resource-grid">
+        <article><h3>Paper & supplement</h3><p>Formulation, analysis, and protocol.</p><span class="status">Public links pending</span></article>
+        <article><h3>Implementation</h3><p>Explore the method core and a minimal example.</p><a class="resource-link" href="https://github.com/FedNP2-team/FedNP2-code" target="_blank" rel="noopener noreferrer">View code on GitHub ↗</a></article>
+      </div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#home">FedNP<sup>2</sup></a><a href="#home">Back to top ↑</a></footer>
+  <dialog id="viewer" aria-label="Research figure viewer">
+    <div class="viewer-toolbar"><button id="figure-size" aria-pressed="false">Original size</button><button id="close">Close ×</button></div>
+    <div class="image-scroll"><img id="full-image" alt="Enlarged research figure"></div>
+  </dialog>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
