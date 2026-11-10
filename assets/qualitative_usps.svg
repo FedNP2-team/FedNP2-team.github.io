@@ -1,0 +1,229 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1650" height="620" viewBox="0 0 1650 620">
+<title>Selected USPS test predictions</title>
+<desc>Six deliberately selected test cases where FedNearPU is correct and all three SSL baselines are wrong. Different training client partitions; identical test samples and threshold 0.5.</desc>
+<rect x="0" y="0" width="1650" height="620" fill="white"/>
+<text x="24" y="35" font-family="Comic Sans MS" font-size="30" font-weight="bold" fill="#243b49" text-anchor="start">USPS</text>
+<text x="144" y="35" font-family="Comic Sans MS" font-size="27" font-weight="normal" fill="#243b49" text-anchor="start">Selected test predictions</text>
+<text x="1626" y="35" font-family="Comic Sans MS" font-size="24" font-weight="normal" fill="#243b49" text-anchor="end">η = 0.5  ·  seed = 0  ·  threshold = 0.5</text>
+<text x="24" y="76" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Test-set composition</text>
+<rect x="302" y="53" width="560.0777279521675" height="32" fill="#8bcdb5"/>
+<rect x="862.0777279521675" y="53" width="763.9222720478326" height="32" fill="#ebcf7b"/>
+<text x="582.0388639760838" y="77" font-family="Comic Sans MS" font-size="21" font-weight="bold" fill="#243b49" text-anchor="middle">Positive  42.3%  (n = 849)</text>
+<text x="1244.0388639760838" y="77" font-family="Comic Sans MS" font-size="21" font-weight="bold" fill="#243b49" text-anchor="middle">Negative  57.7%  (n = 1158)</text>
+<text x="24" y="124" font-family="Comic Sans MS" font-size="27" font-weight="bold" fill="#243b49" text-anchor="start">Positive examples</text>
+<text x="1626" y="124" font-family="Comic Sans MS" font-size="21" font-weight="normal" fill="#243b49" text-anchor="end">22 matching cases in the test set</text>
+<g id="case-1564">
+<rect x="24" y="138" width="518" height="174" fill="#fff" stroke="#c8d5dd"/>
+<image id="sample-1564" x="24" y="138" width="144" height="144" image-rendering="pixelated" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAABF0lEQVR4nAXBzUvCYBwH8O8zf8uXmc4mZVK2UVKBmGZRGNgxCDp16r+sS+WxDiWVGIFkWBYqGknO17mc8+nzYXBIympKnZNF4/3+qf5H4kJ8JxGVzOFECkWDFw2Sts82Wb9aejXVzEY3902cT2qFl77NFsPzfDThZBSGQrWvphNaYJC/akzJarZhefyxRFB/zOZ1TrANwCjfdNcCwXBJAAMAYEZWIsktR/a6SQAD+Lj1WyvXTzOVDsEx6xt1LG4Pxm+9lWiRmLwX+7z94YAoB9wCBCF0dJLyC2DO5bQ2bpkE5vK4Fd0UlzKHVPoyadq6U9TjSseb3PXlzisWgxjeP4i4mNNrPl8+tKcMIFmLr8tOvVj46Nn4B1BzcisHj/07AAAAAElFTkSuQmCC"/>
+<g id="case-1564-FedNearPU">
+<rect x="172" y="138" width="370" height="35" fill="#e2f3e8"/>
+<rect x="172" y="138" width="167" height="35" fill="#d2eadd"/>
+<text x="179" y="164" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">FedNearPU</text>
+<text x="347" y="164" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 512 156 l 6 6 l 13 -16" fill="none" stroke="#00a66c" stroke-width="3"/>
+</g>
+<g id="case-1564-FixMatch">
+<rect x="172" y="174" width="370" height="35" fill="#fff0f0"/>
+<rect x="172" y="174" width="167" height="35" fill="#edf2f6"/>
+<text x="179" y="200" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FixMatch</text>
+<text x="347" y="200" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 513 186 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-1564-FreeMatch">
+<rect x="172" y="210" width="370" height="35" fill="#fff0f0"/>
+<rect x="172" y="210" width="167" height="35" fill="#edf2f6"/>
+<text x="179" y="236" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FreeMatch</text>
+<text x="347" y="236" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 513 222 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-1564-MeanTeacher">
+<rect x="172" y="246" width="370" height="35" fill="#fff0f0"/>
+<rect x="172" y="246" width="167" height="35" fill="#edf2f6"/>
+<text x="179" y="272" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">MeanTeacher</text>
+<text x="347" y="272" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 513 258 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<rect x="32" y="291" width="11" height="11" fill="#79bda5"/>
+<text x="50" y="306" font-family="Comic Sans MS" font-size="22" font-weight="bold" fill="#243b49" text-anchor="start">GT: Positive</text>
+<text x="531" y="306" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="end">Test #1564</text>
+</g>
+<g id="case-1780">
+<rect x="566" y="138" width="518" height="174" fill="#fff" stroke="#c8d5dd"/>
+<image id="sample-1780" x="566" y="138" width="144" height="144" image-rendering="pixelated" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAA40lEQVR4nDWPwU7CQBRFb2deASm2gqUJGiNRxJ1foAtXbvxXf6Eb1yprEiSGRBMKpDPjVFvmuajdnpzcnOsBoMvHpNLPLwoACEDr/G7k23KhuQZebzxA5MMBAATgRVetTfW9MvwP5NGZVL/bz6IxOieJDKqPrEQ96oWTbt7hrBAMBxBkfN3+6rfD6eGPXhsmdC+mUZQc346VWqRvmsTg5jQODpzshxxv3w0B5Xov/dXTHD0xtyCXpSoY3S/TmfOlVUwws+Xwwe42uz0ABsFpS0TMzE0YXJkbIQA0bzl/HRa6FvAHPGdd4SNo+RQAAAAASUVORK5CYII="/>
+<g id="case-1780-FedNearPU">
+<rect x="714" y="138" width="370" height="35" fill="#e2f3e8"/>
+<rect x="714" y="138" width="167" height="35" fill="#d2eadd"/>
+<text x="721" y="164" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">FedNearPU</text>
+<text x="889" y="164" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 1054 156 l 6 6 l 13 -16" fill="none" stroke="#00a66c" stroke-width="3"/>
+</g>
+<g id="case-1780-FixMatch">
+<rect x="714" y="174" width="370" height="35" fill="#fff0f0"/>
+<rect x="714" y="174" width="167" height="35" fill="#edf2f6"/>
+<text x="721" y="200" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FixMatch</text>
+<text x="889" y="200" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 1055 186 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-1780-FreeMatch">
+<rect x="714" y="210" width="370" height="35" fill="#fff0f0"/>
+<rect x="714" y="210" width="167" height="35" fill="#edf2f6"/>
+<text x="721" y="236" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FreeMatch</text>
+<text x="889" y="236" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 1055 222 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-1780-MeanTeacher">
+<rect x="714" y="246" width="370" height="35" fill="#fff0f0"/>
+<rect x="714" y="246" width="167" height="35" fill="#edf2f6"/>
+<text x="721" y="272" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">MeanTeacher</text>
+<text x="889" y="272" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 1055 258 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<rect x="574" y="291" width="11" height="11" fill="#79bda5"/>
+<text x="592" y="306" font-family="Comic Sans MS" font-size="22" font-weight="bold" fill="#243b49" text-anchor="start">GT: Positive</text>
+<text x="1073" y="306" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="end">Test #1780</text>
+</g>
+<g id="case-1213">
+<rect x="1108" y="138" width="518" height="174" fill="#fff" stroke="#c8d5dd"/>
+<image id="sample-1213" x="1108" y="138" width="144" height="144" image-rendering="pixelated" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAA50lEQVR4nE3Kz0sCQRyG8XfWb6PbRrrDBmV4CMygixCE9AM69h/nMejUpUMrQlREWIYG2+A6uc3u7EyHijw+Hx52dtxZBZA/9IcLAKDeScgY/LCTvmUOAN1qo8Hb50JwzzKArgfWMcHLQq00uF/VlC6Cer2119DRkRVR7YlVNg66O83d7Xz0acp8ckXUPO2G0aaTX2kyHj3ek3m/mawdBvIifpkppTIqp5dBez8b9mNlnHMgFDKvbRV3z9ICADwAfkvIQfLT8ADwdUzHGf6BVfJE2SUASm3cEpjZx9z8Nghw8zh4Tf+ObwnYZeMbTqOLAAAAAElFTkSuQmCC"/>
+<g id="case-1213-FedNearPU">
+<rect x="1256" y="138" width="370" height="35" fill="#e2f3e8"/>
+<rect x="1256" y="138" width="167" height="35" fill="#d2eadd"/>
+<text x="1263" y="164" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">FedNearPU</text>
+<text x="1431" y="164" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 1596 156 l 6 6 l 13 -16" fill="none" stroke="#00a66c" stroke-width="3"/>
+</g>
+<g id="case-1213-FixMatch">
+<rect x="1256" y="174" width="370" height="35" fill="#fff0f0"/>
+<rect x="1256" y="174" width="167" height="35" fill="#edf2f6"/>
+<text x="1263" y="200" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FixMatch</text>
+<text x="1431" y="200" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 1597 186 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-1213-FreeMatch">
+<rect x="1256" y="210" width="370" height="35" fill="#fff0f0"/>
+<rect x="1256" y="210" width="167" height="35" fill="#edf2f6"/>
+<text x="1263" y="236" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FreeMatch</text>
+<text x="1431" y="236" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 1597 222 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-1213-MeanTeacher">
+<rect x="1256" y="246" width="370" height="35" fill="#fff0f0"/>
+<rect x="1256" y="246" width="167" height="35" fill="#edf2f6"/>
+<text x="1263" y="272" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">MeanTeacher</text>
+<text x="1431" y="272" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 1597 258 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<rect x="1116" y="291" width="11" height="11" fill="#79bda5"/>
+<text x="1134" y="306" font-family="Comic Sans MS" font-size="22" font-weight="bold" fill="#243b49" text-anchor="start">GT: Positive</text>
+<text x="1615" y="306" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="end">Test #1213</text>
+</g>
+<text x="24" y="356" font-family="Comic Sans MS" font-size="27" font-weight="bold" fill="#243b49" text-anchor="start">Negative examples</text>
+<text x="1626" y="356" font-family="Comic Sans MS" font-size="21" font-weight="normal" fill="#243b49" text-anchor="end">31 matching cases in the test set</text>
+<g id="case-1748">
+<rect x="24" y="370" width="518" height="174" fill="#fff" stroke="#c8d5dd"/>
+<image id="sample-1748" x="24" y="370" width="144" height="144" image-rendering="pixelated" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAA4ElEQVR4nEXNPUvDQACA4ff0zqpRg3QwWjTYSqu21MFVoVP/r79AHFQcFJRABVtsO5QEkpR+GRXvzkGI67M8AoDVnUZ1cJugLRIQ65XLk3i8dqRHCwTg1NvHw5uk2gyvBkaCOmzXho+0Wt61AonYap5Gob+7t21Gc4sEp1Rc8b76D1mxN7NImHX23eQ52KzF4SdI7PS+X8hic+G+JRok6HQsrPAbqpMakIC1UPAqk/c5sAQAYqPsdCP9D6pU/3hJTQ7CPfO7vYwc1MH591OkcxBO2Q1eF8DfAss/wV2oAfgF1qBU+lYRD+wAAAAASUVORK5CYII="/>
+<g id="case-1748-FedNearPU">
+<rect x="172" y="370" width="370" height="35" fill="#e2f3e8"/>
+<rect x="172" y="370" width="167" height="35" fill="#d2eadd"/>
+<text x="179" y="396" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">FedNearPU</text>
+<text x="347" y="396" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 512 388 l 6 6 l 13 -16" fill="none" stroke="#00a66c" stroke-width="3"/>
+</g>
+<g id="case-1748-FixMatch">
+<rect x="172" y="406" width="370" height="35" fill="#fff0f0"/>
+<rect x="172" y="406" width="167" height="35" fill="#edf2f6"/>
+<text x="179" y="432" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FixMatch</text>
+<text x="347" y="432" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 513 418 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-1748-FreeMatch">
+<rect x="172" y="442" width="370" height="35" fill="#fff0f0"/>
+<rect x="172" y="442" width="167" height="35" fill="#edf2f6"/>
+<text x="179" y="468" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FreeMatch</text>
+<text x="347" y="468" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 513 454 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-1748-MeanTeacher">
+<rect x="172" y="478" width="370" height="35" fill="#fff0f0"/>
+<rect x="172" y="478" width="167" height="35" fill="#edf2f6"/>
+<text x="179" y="504" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">MeanTeacher</text>
+<text x="347" y="504" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 513 490 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<rect x="32" y="523" width="11" height="11" fill="#ddbd62"/>
+<text x="50" y="538" font-family="Comic Sans MS" font-size="22" font-weight="bold" fill="#243b49" text-anchor="start">GT: Negative</text>
+<text x="531" y="538" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="end">Test #1748</text>
+</g>
+<g id="case-1686">
+<rect x="566" y="370" width="518" height="174" fill="#fff" stroke="#c8d5dd"/>
+<image id="sample-1686" x="566" y="370" width="144" height="144" image-rendering="pixelated" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAABDUlEQVR4nAXBS0sCURgG4PeMn+ZlbCijRVkuukFSEAUW1baWrf2LRaugImjRRjKQoCxIqBADJ8uZIcfRmTPnfD2PAIS5sruWN61kNHg5bRGQ3TjZybE2lN+zR0yg4lHlp+a4w7Hner+KkFmt4OLeD6WKY80gkZmb6X10JDM0ABASaZpYGEZjGf6FGiCRLphW1Rn1g/5zKwgVCXM+q2Yzspin5s1b2ycjN+U26rY0N/cP8+f2kDhota+ffJ16HVSXTIBU50y03RhB9HicCmM22LepaCXAgrTnRCAkStXk1YNjlLZTza4EgfVkOVd4p609t/6tQJCfl7y86BtZ77buMQRA0+sHZYu7d7WvEPgHnc+CqVfswFIAAAAASUVORK5CYII="/>
+<g id="case-1686-FedNearPU">
+<rect x="714" y="370" width="370" height="35" fill="#e2f3e8"/>
+<rect x="714" y="370" width="167" height="35" fill="#d2eadd"/>
+<text x="721" y="396" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">FedNearPU</text>
+<text x="889" y="396" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 1054 388 l 6 6 l 13 -16" fill="none" stroke="#00a66c" stroke-width="3"/>
+</g>
+<g id="case-1686-FixMatch">
+<rect x="714" y="406" width="370" height="35" fill="#fff0f0"/>
+<rect x="714" y="406" width="167" height="35" fill="#edf2f6"/>
+<text x="721" y="432" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FixMatch</text>
+<text x="889" y="432" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 1055 418 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-1686-FreeMatch">
+<rect x="714" y="442" width="370" height="35" fill="#fff0f0"/>
+<rect x="714" y="442" width="167" height="35" fill="#edf2f6"/>
+<text x="721" y="468" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FreeMatch</text>
+<text x="889" y="468" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 1055 454 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-1686-MeanTeacher">
+<rect x="714" y="478" width="370" height="35" fill="#fff0f0"/>
+<rect x="714" y="478" width="167" height="35" fill="#edf2f6"/>
+<text x="721" y="504" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">MeanTeacher</text>
+<text x="889" y="504" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 1055 490 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<rect x="574" y="523" width="11" height="11" fill="#ddbd62"/>
+<text x="592" y="538" font-family="Comic Sans MS" font-size="22" font-weight="bold" fill="#243b49" text-anchor="start">GT: Negative</text>
+<text x="1073" y="538" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="end">Test #1686</text>
+</g>
+<g id="case-498">
+<rect x="1108" y="370" width="518" height="174" fill="#fff" stroke="#c8d5dd"/>
+<image id="sample-498" x="1108" y="370" width="144" height="144" image-rendering="pixelated" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAA3UlEQVR4nD2OXSsEUQBAzx133NgdozW2NJLYISW7eVX21R/1I+RREkomSynz4GXWapj9MtYMez3c4fV0Oh0BCHe/Xe+Gt3EBSEBtHW0OV33n9FWDBcJtNe6PT+xmTRhDOBuyE/ofjhKABcxWJr1M2l/fumxMx2I4s1SNMwzQ/eu5tOL/RIPS0O9nMt8OXh5HumzkyZt3uHL3XFACWGjtJZ2B/gfzOwfFuRGwAHutvXx1MwL+xnaDp4tEqc+JNsANiHSj7kUPYzMmVbW5vujZl71sigSdhjVXkvbjXMMvYP1Rcy6Q7R8AAAAASUVORK5CYII="/>
+<g id="case-498-FedNearPU">
+<rect x="1256" y="370" width="370" height="35" fill="#e2f3e8"/>
+<rect x="1256" y="370" width="167" height="35" fill="#d2eadd"/>
+<text x="1263" y="396" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">FedNearPU</text>
+<text x="1431" y="396" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 1596 388 l 6 6 l 13 -16" fill="none" stroke="#00a66c" stroke-width="3"/>
+</g>
+<g id="case-498-FixMatch">
+<rect x="1256" y="406" width="370" height="35" fill="#fff0f0"/>
+<rect x="1256" y="406" width="167" height="35" fill="#edf2f6"/>
+<text x="1263" y="432" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FixMatch</text>
+<text x="1431" y="432" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 1597 418 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-498-FreeMatch">
+<rect x="1256" y="442" width="370" height="35" fill="#fff0f0"/>
+<rect x="1256" y="442" width="167" height="35" fill="#edf2f6"/>
+<text x="1263" y="468" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FreeMatch</text>
+<text x="1431" y="468" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 1597 454 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-498-MeanTeacher">
+<rect x="1256" y="478" width="370" height="35" fill="#fff0f0"/>
+<rect x="1256" y="478" width="167" height="35" fill="#edf2f6"/>
+<text x="1263" y="504" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">MeanTeacher</text>
+<text x="1431" y="504" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 1597 490 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<rect x="1116" y="523" width="11" height="11" fill="#ddbd62"/>
+<text x="1134" y="538" font-family="Comic Sans MS" font-size="22" font-weight="bold" fill="#243b49" text-anchor="start">GT: Negative</text>
+<text x="1615" y="538" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="end">Test #498</text>
+</g>
+<text x="24" y="574" font-family="Comic Sans MS" font-size="21" font-weight="normal" fill="#243b49" text-anchor="start">Six selected success cases: FedNearPU correct, all three compared baselines incorrect.</text>
+<text x="24" y="604" font-family="Comic Sans MS" font-size="21" font-weight="normal" fill="#243b49" text-anchor="start">Same independent test set; training client partitions differ. These cases do not establish an overall ranking.</text>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="620" viewBox="0 0 720 620">
+<defs>
+  <linearGradient id="card" x2=".9" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#f5f1fc"/></linearGradient>
+  <linearGradient id="ink" x2="1" y2="1"><stop stop-color="#a789ca"/><stop offset="1" stop-color="#654585"/></linearGradient>
+  <linearGradient id="flow"><stop stop-color="#b7a0cf" stop-opacity=".3"/><stop offset="1" stop-color="#8863ae"/></linearGradient>
+  <radialGradient id="halo"><stop stop-color="#d5c6e8" stop-opacity=".65"/><stop offset="1" stop-color="#ede6f4" stop-opacity="0"/></radialGradient>
+  <filter id="shadow" x="-50%" y="-50%" width="210%" height="220%"><feDropShadow dx="0" dy="14" stdDeviation="15" flood-color="#58416b" flood-opacity=".12"/></filter>
+  <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#695382" flood-opacity=".08"/></filter>
+</defs>
+<ellipse cx="380" cy="315" rx="335" ry="280" fill="url(#halo)"/>
+<g fill="none" stroke="#d9cde4" stroke-width="1">
+ <path d="M62 256C160 53 518 49 647 256" opacity=".5"/>
+ <path d="M77 378C223 566 537 548 662 368" opacity=".5"/>
+</g>
+<g fill="none" stroke="url(#flow)" stroke-linecap="round">
+ <path d="M196 152C300 152 262 287 360 287" stroke-width="3"/>
+ <path d="M205 398C292 398 284 307 360 307" stroke-width="5"/>
+ <path d="M446 297C521 297 490 367 556 367" stroke-width="5"/>
+</g>
+<g fill="#9e7dbd"><circle cx="263" cy="208" r="5"/><circle cx="279" cy="358" r="6"/><circle cx="497" cy="326" r="5"/></g>
+<!-- Each card is a conceptual client, with positive examples and unlabeled samples. -->
+<g transform="translate(44 83) rotate(-7 82 68)" filter="url(#shadow)">
+ <rect width="164" height="137" rx="19" fill="url(#card)" stroke="#c5afd9"/>
+ <rect x="16" y="16" width="31" height="6" rx="3" fill="#c2afd5"/>
+ <circle cx="141" cy="20" r="4" fill="#a28bb7"/>
+ <g fill="#e99f99"><circle cx="28" cy="48" r="5"/><circle cx="48" cy="48" r="5"/><circle cx="68" cy="48" r="5"/></g>
+ <g fill="#cbd0d4"><circle cx="88" cy="48" r="5"/><circle cx="108" cy="48" r="5"/><circle cx="128" cy="48" r="5"/></g>
+ <path d="M17 75H147" stroke="#e6e0ec"/>
+ <g fill="#ede8f2"><rect x="17" y="91" width="130" height="8" rx="4"/><rect x="17" y="108" width="130" height="8" rx="4"/></g>
+ <rect x="17" y="91" width="91" height="8" rx="4" fill="#a78ac3"/><rect x="17" y="108" width="52" height="8" rx="4" fill="#c8b4de"/>
+</g>
+<g transform="translate(52 337) rotate(6 82 68)" filter="url(#shadow)">
+ <rect width="164" height="137" rx="19" fill="url(#card)" stroke="#c5afd9"/>
+ <rect x="16" y="16" width="31" height="6" rx="3" fill="#c2afd5"/>
+ <circle cx="141" cy="20" r="4" fill="#a28bb7"/>
+ <g fill="#e99f99"><circle cx="28" cy="48" r="5"/><circle cx="48" cy="48" r="5"/></g>
+ <g fill="#cbd0d4"><circle cx="68" cy="48" r="5"/><circle cx="88" cy="48" r="5"/><circle cx="108" cy="48" r="5"/><circle cx="128" cy="48" r="5"/></g>
+ <path d="M17 75H147" stroke="#e6e0ec"/>
+ <g fill="#ede8f2"><rect x="17" y="91" width="130" height="8" rx="4"/><rect x="17" y="108" width="130" height="8" rx="4"/></g>
+ <rect x="17" y="91" width="60" height="8" rx="4" fill="#c8b4de"/><rect x="17" y="108" width="110" height="8" rx="4" fill="#a78ac3"/>
+</g>
+<g transform="translate(382 72) rotate(8)" opacity=".38">
+ <rect width="113" height="86" rx="14" fill="white" stroke="#d5d2d9"/>
+ <rect x="15" y="17" width="28" height="5" rx="2" fill="#c2bec8"/>
+ <g fill="#d3ceda"><rect x="15" y="40" width="80" height="7" rx="3"/><rect x="15" y="57" width="51" height="7" rx="3"/></g>
+</g>
+<g transform="translate(301 225)" filter="url(#shadow)">
+ <rect x="8" y="12" width="153" height="147" rx="25" fill="#e2d4ee" stroke="#cdb9df"/>
+ <rect width="153" height="147" rx="25" fill="url(#card)" stroke="#b8a0cf"/>
+ <rect x="24" y="28" width="105" height="52" rx="12" fill="#f0e9f7"/>
+ <g fill="url(#ink)"><rect x="40" y="52" width="13" height="16" rx="3"/><rect x="61" y="41" width="13" height="27" rx="3"/><rect x="82" y="36" width="13" height="32" rx="3"/><rect x="103" y="48" width="10" height="20" rx="3"/></g>
+ <text x="76" y="113" text-anchor="middle" font-family="Georgia,serif" font-size="25" fill="#71528e">Personalized</text>
+ <text x="76" y="135" text-anchor="middle" font-family="Georgia,serif" font-size="22" fill="#71528e">proxy</text>
+</g>
+<g transform="translate(535 296) rotate(-4 75 89)" filter="url(#shadow)">
+ <rect x="7" y="9" width="153" height="172" rx="20" fill="#e7e5e9"/>
+ <rect width="153" height="172" rx="20" fill="url(#card)" stroke="#bcb0c9"/>
+ <rect x="0" y="0" width="153" height="47" rx="20" fill="#293e49"/>
+ <path d="M0 23H153V47H0Z" fill="#293e49"/>
+ <text x="76" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="white">Target client</text>
+ <g fill="#e99f99"><circle cx="24" cy="76" r="6"/><circle cx="24" cy="106" r="6"/><circle cx="24" cy="136" r="6"/></g>
+ <g fill="#e8e0f0"><rect x="42" y="70" width="89" height="12" rx="5"/><rect x="42" y="100" width="89" height="12" rx="5"/><rect x="42" y="130" width="89" height="12" rx="5"/></g>
+ <g fill="url(#ink)"><rect x="42" y="70" width="70" height="12" rx="5"/><rect x="42" y="100" width="37" height="12" rx="5"/><rect x="42" y="130" width="58" height="12" rx="5"/></g>
+</g>
+<text x="136" y="275" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" fill="#7c688f">Neighboring teachers</text>
+<g fill="#c8b8d9"><circle cx="275" cy="108" r="4"/><circle cx="478" cy="470" r="5"/><circle cx="342" cy="508" r="3"/></g>
+</svg>

@@ -1,0 +1,428 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1650" height="650" viewBox="0 0 1650 650">
+<title>Selected Letter test predictions</title>
+<desc>Six deliberately selected test cases where FedNearPU is correct and all three compared PU-adapted SSL baselines are wrong. Different training client partitions; identical test samples and threshold 0.5.</desc>
+<rect x="0" y="0" width="1650" height="650" fill="white"/>
+<text x="24" y="35" font-family="Comic Sans MS" font-size="30" font-weight="bold" fill="#243b49" text-anchor="start">Letter</text>
+<text x="155" y="35" font-family="Comic Sans MS" font-size="27" font-weight="normal" fill="#243b49" text-anchor="start">Selected test predictions</text>
+<text x="1626" y="35" font-family="Comic Sans MS" font-size="24" font-weight="normal" fill="#243b49" text-anchor="end">η = 0.5  ·  seed = 0  ·  threshold = 0.5</text>
+<text x="24" y="76" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Test-set composition</text>
+<rect x="302" y="53" width="641.809" height="32" fill="#8bcdb5"/>
+<rect x="943.809" y="53" width="682.191" height="32" fill="#ebcf7b"/>
+<text x="622.9045" y="77" font-family="Comic Sans MS" font-size="21" font-weight="bold" fill="#243b49" text-anchor="middle">Positive  48.5%  (n = 1939)</text>
+<text x="1284.9045" y="77" font-family="Comic Sans MS" font-size="21" font-weight="bold" fill="#243b49" text-anchor="middle">Negative  51.5%  (n = 2061)</text>
+<text x="24" y="124" font-family="Comic Sans MS" font-size="27" font-weight="bold" fill="#243b49" text-anchor="start">Positive examples</text>
+<text x="1626" y="124" font-family="Comic Sans MS" font-size="21" font-weight="normal" fill="#243b49" text-anchor="end">69 matching cases in the test set</text>
+<g id="case-1598">
+<rect x="24" y="138" width="518" height="174" fill="#fff" stroke="#c8d5dd"/>
+<g id="features-1598">
+<rect x="24" y="138" width="36" height="36" fill="#799aac" stroke="white"/>
+<text x="42" y="163" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="white" text-anchor="middle">9</text>
+<rect x="60" y="138" width="36" height="36" fill="#6c90a3" stroke="white"/>
+<text x="78" y="163" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="white" text-anchor="middle">10</text>
+<rect x="96" y="138" width="36" height="36" fill="#45728a" stroke="white"/>
+<text x="114" y="163" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="white" text-anchor="middle">13</text>
+<rect x="132" y="138" width="36" height="36" fill="#799aac" stroke="white"/>
+<text x="150" y="163" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="white" text-anchor="middle">9</text>
+<rect x="24" y="174" width="36" height="36" fill="#2b5e79" stroke="white"/>
+<text x="42" y="199" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="white" text-anchor="middle">15</text>
+<rect x="60" y="174" width="36" height="36" fill="#86a4b4" stroke="white"/>
+<text x="78" y="199" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">8</text>
+<rect x="96" y="174" width="36" height="36" fill="#92adbd" stroke="white"/>
+<text x="114" y="199" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">7</text>
+<rect x="132" y="174" width="36" height="36" fill="#acc1ce" stroke="white"/>
+<text x="150" y="199" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">5</text>
+<rect x="24" y="210" width="36" height="36" fill="#acc1ce" stroke="white"/>
+<text x="42" y="235" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">5</text>
+<rect x="60" y="210" width="36" height="36" fill="#92adbd" stroke="white"/>
+<text x="78" y="235" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">7</text>
+<rect x="96" y="210" width="36" height="36" fill="#9fb7c5" stroke="white"/>
+<text x="114" y="235" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">6</text>
+<rect x="132" y="210" width="36" height="36" fill="#86a4b4" stroke="white"/>
+<text x="150" y="235" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">8</text>
+<rect x="24" y="246" width="36" height="36" fill="#527c92" stroke="white"/>
+<text x="42" y="271" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="white" text-anchor="middle">12</text>
+<rect x="60" y="246" width="36" height="36" fill="#6c90a3" stroke="white"/>
+<text x="78" y="271" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="white" text-anchor="middle">10</text>
+<rect x="96" y="246" width="36" height="36" fill="#6c90a3" stroke="white"/>
+<text x="114" y="271" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="white" text-anchor="middle">10</text>
+<rect x="132" y="246" width="36" height="36" fill="#b9cbd6" stroke="white"/>
+<text x="150" y="271" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">4</text>
+</g>
+<g id="case-1598-FedNearPU">
+<rect x="172" y="138" width="370" height="35" fill="#e2f3e8"/>
+<rect x="172" y="138" width="167" height="35" fill="#d2eadd"/>
+<text x="179" y="164" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">FedNearPU</text>
+<text x="347" y="164" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 512 156 l 6 6 l 13 -16" fill="none" stroke="#00a66c" stroke-width="3"/>
+</g>
+<g id="case-1598-FixMatch">
+<rect x="172" y="174" width="370" height="35" fill="#fff0f0"/>
+<rect x="172" y="174" width="167" height="35" fill="#edf2f6"/>
+<text x="179" y="200" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FixMatch</text>
+<text x="347" y="200" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 513 186 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-1598-FreeMatch">
+<rect x="172" y="210" width="370" height="35" fill="#fff0f0"/>
+<rect x="172" y="210" width="167" height="35" fill="#edf2f6"/>
+<text x="179" y="236" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FreeMatch</text>
+<text x="347" y="236" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 513 222 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-1598-MeanTeacher">
+<rect x="172" y="246" width="370" height="35" fill="#fff0f0"/>
+<rect x="172" y="246" width="167" height="35" fill="#edf2f6"/>
+<text x="179" y="272" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">MeanTeacher</text>
+<text x="347" y="272" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 513 258 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<rect x="32" y="291" width="11" height="11" fill="#79bda5"/>
+<text x="50" y="306" font-family="Comic Sans MS" font-size="22" font-weight="bold" fill="#243b49" text-anchor="start">GT: Positive · W</text>
+<text x="531" y="306" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="end">Test #1598</text>
+</g>
+<g id="case-245">
+<rect x="566" y="138" width="518" height="174" fill="#fff" stroke="#c8d5dd"/>
+<g id="features-245">
+<rect x="566" y="138" width="36" height="36" fill="#86a4b4" stroke="white"/>
+<text x="584" y="163" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">8</text>
+<rect x="602" y="138" width="36" height="36" fill="#92adbd" stroke="white"/>
+<text x="620" y="163" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">7</text>
+<rect x="638" y="138" width="36" height="36" fill="#9fb7c5" stroke="white"/>
+<text x="656" y="163" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">6</text>
+<rect x="674" y="138" width="36" height="36" fill="#5f869b" stroke="white"/>
+<text x="692" y="163" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="white" text-anchor="middle">11</text>
+<rect x="566" y="174" width="36" height="36" fill="#acc1ce" stroke="white"/>
+<text x="584" y="199" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">5</text>
+<rect x="602" y="174" width="36" height="36" fill="#b9cbd6" stroke="white"/>
+<text x="620" y="199" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">4</text>
+<rect x="638" y="174" width="36" height="36" fill="#45728a" stroke="white"/>
+<text x="656" y="199" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="white" text-anchor="middle">13</text>
+<rect x="674" y="174" width="36" height="36" fill="#b9cbd6" stroke="white"/>
+<text x="692" y="199" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">4</text>
+<rect x="566" y="210" width="36" height="36" fill="#d3dfe7" stroke="white"/>
+<text x="584" y="235" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">2</text>
+<rect x="602" y="210" width="36" height="36" fill="#527c92" stroke="white"/>
+<text x="620" y="235" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="white" text-anchor="middle">12</text>
+<rect x="638" y="210" width="36" height="36" fill="#86a4b4" stroke="white"/>
+<text x="656" y="235" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">8</text>
+<rect x="674" y="210" width="36" height="36" fill="#acc1ce" stroke="white"/>
+<text x="692" y="235" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">5</text>
+<rect x="566" y="246" width="36" height="36" fill="#d3dfe7" stroke="white"/>
+<text x="584" y="271" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">2</text>
+<rect x="602" y="246" width="36" height="36" fill="#86a4b4" stroke="white"/>
+<text x="620" y="271" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">8</text>
+<rect x="638" y="246" width="36" height="36" fill="#86a4b4" stroke="white"/>
+<text x="656" y="271" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">8</text>
+<rect x="674" y="246" width="36" height="36" fill="#9fb7c5" stroke="white"/>
+<text x="692" y="271" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">6</text>
+</g>
+<g id="case-245-FedNearPU">
+<rect x="714" y="138" width="370" height="35" fill="#e2f3e8"/>
+<rect x="714" y="138" width="167" height="35" fill="#d2eadd"/>
+<text x="721" y="164" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">FedNearPU</text>
+<text x="889" y="164" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 1054 156 l 6 6 l 13 -16" fill="none" stroke="#00a66c" stroke-width="3"/>
+</g>
+<g id="case-245-FixMatch">
+<rect x="714" y="174" width="370" height="35" fill="#fff0f0"/>
+<rect x="714" y="174" width="167" height="35" fill="#edf2f6"/>
+<text x="721" y="200" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FixMatch</text>
+<text x="889" y="200" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 1055 186 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-245-FreeMatch">
+<rect x="714" y="210" width="370" height="35" fill="#fff0f0"/>
+<rect x="714" y="210" width="167" height="35" fill="#edf2f6"/>
+<text x="721" y="236" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FreeMatch</text>
+<text x="889" y="236" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 1055 222 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-245-MeanTeacher">
+<rect x="714" y="246" width="370" height="35" fill="#fff0f0"/>
+<rect x="714" y="246" width="167" height="35" fill="#edf2f6"/>
+<text x="721" y="272" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">MeanTeacher</text>
+<text x="889" y="272" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 1055 258 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<rect x="574" y="291" width="11" height="11" fill="#79bda5"/>
+<text x="592" y="306" font-family="Comic Sans MS" font-size="22" font-weight="bold" fill="#243b49" text-anchor="start">GT: Positive · Z</text>
+<text x="1073" y="306" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="end">Test #245</text>
+</g>
+<g id="case-1410">
+<rect x="1108" y="138" width="518" height="174" fill="#fff" stroke="#c8d5dd"/>
+<g id="features-1410">
+<rect x="1108" y="138" width="36" height="36" fill="#acc1ce" stroke="white"/>
+<text x="1126" y="163" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">5</text>
+<rect x="1144" y="138" width="36" height="36" fill="#799aac" stroke="white"/>
+<text x="1162" y="163" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="white" text-anchor="middle">9</text>
+<rect x="1180" y="138" width="36" height="36" fill="#86a4b4" stroke="white"/>
+<text x="1198" y="163" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">8</text>
+<rect x="1216" y="138" width="36" height="36" fill="#92adbd" stroke="white"/>
+<text x="1234" y="163" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">7</text>
+<rect x="1108" y="174" width="36" height="36" fill="#799aac" stroke="white"/>
+<text x="1126" y="199" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="white" text-anchor="middle">9</text>
+<rect x="1144" y="174" width="36" height="36" fill="#acc1ce" stroke="white"/>
+<text x="1162" y="199" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">5</text>
+<rect x="1180" y="174" width="36" height="36" fill="#92adbd" stroke="white"/>
+<text x="1198" y="199" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">7</text>
+<rect x="1216" y="174" width="36" height="36" fill="#c6d5df" stroke="white"/>
+<text x="1234" y="199" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">3</text>
+<rect x="1108" y="210" width="36" height="36" fill="#d3dfe7" stroke="white"/>
+<text x="1126" y="235" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">2</text>
+<rect x="1144" y="210" width="36" height="36" fill="#92adbd" stroke="white"/>
+<text x="1162" y="235" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">7</text>
+<rect x="1180" y="210" width="36" height="36" fill="#9fb7c5" stroke="white"/>
+<text x="1198" y="235" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">6</text>
+<rect x="1216" y="210" width="36" height="36" fill="#acc1ce" stroke="white"/>
+<text x="1234" y="235" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">5</text>
+<rect x="1108" y="246" width="36" height="36" fill="#c6d5df" stroke="white"/>
+<text x="1126" y="271" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">3</text>
+<rect x="1144" y="246" width="36" height="36" fill="#86a4b4" stroke="white"/>
+<text x="1162" y="271" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">8</text>
+<rect x="1180" y="246" width="36" height="36" fill="#799aac" stroke="white"/>
+<text x="1198" y="271" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="white" text-anchor="middle">9</text>
+<rect x="1216" y="246" width="36" height="36" fill="#d3dfe7" stroke="white"/>
+<text x="1234" y="271" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">2</text>
+</g>
+<g id="case-1410-FedNearPU">
+<rect x="1256" y="138" width="370" height="35" fill="#e2f3e8"/>
+<rect x="1256" y="138" width="167" height="35" fill="#d2eadd"/>
+<text x="1263" y="164" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">FedNearPU</text>
+<text x="1431" y="164" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 1596 156 l 6 6 l 13 -16" fill="none" stroke="#00a66c" stroke-width="3"/>
+</g>
+<g id="case-1410-FixMatch">
+<rect x="1256" y="174" width="370" height="35" fill="#fff0f0"/>
+<rect x="1256" y="174" width="167" height="35" fill="#edf2f6"/>
+<text x="1263" y="200" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FixMatch</text>
+<text x="1431" y="200" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 1597 186 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-1410-FreeMatch">
+<rect x="1256" y="210" width="370" height="35" fill="#fff0f0"/>
+<rect x="1256" y="210" width="167" height="35" fill="#edf2f6"/>
+<text x="1263" y="236" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FreeMatch</text>
+<text x="1431" y="236" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 1597 222 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-1410-MeanTeacher">
+<rect x="1256" y="246" width="370" height="35" fill="#fff0f0"/>
+<rect x="1256" y="246" width="167" height="35" fill="#edf2f6"/>
+<text x="1263" y="272" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">MeanTeacher</text>
+<text x="1431" y="272" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 1597 258 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<rect x="1116" y="291" width="11" height="11" fill="#79bda5"/>
+<text x="1134" y="306" font-family="Comic Sans MS" font-size="22" font-weight="bold" fill="#243b49" text-anchor="start">GT: Positive · S</text>
+<text x="1615" y="306" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="end">Test #1410</text>
+</g>
+<text x="24" y="356" font-family="Comic Sans MS" font-size="27" font-weight="bold" fill="#243b49" text-anchor="start">Negative examples</text>
+<text x="1626" y="356" font-family="Comic Sans MS" font-size="21" font-weight="normal" fill="#243b49" text-anchor="end">29 matching cases in the test set</text>
+<g id="case-1589">
+<rect x="24" y="370" width="518" height="174" fill="#fff" stroke="#c8d5dd"/>
+<g id="features-1589">
+<rect x="24" y="370" width="36" height="36" fill="#d3dfe7" stroke="white"/>
+<text x="42" y="395" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">2</text>
+<rect x="60" y="370" width="36" height="36" fill="#c6d5df" stroke="white"/>
+<text x="78" y="395" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">3</text>
+<rect x="96" y="370" width="36" height="36" fill="#d3dfe7" stroke="white"/>
+<text x="114" y="395" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">2</text>
+<rect x="132" y="370" width="36" height="36" fill="#d3dfe7" stroke="white"/>
+<text x="150" y="395" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">2</text>
+<rect x="24" y="406" width="36" height="36" fill="#d3dfe7" stroke="white"/>
+<text x="42" y="431" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">2</text>
+<rect x="60" y="406" width="36" height="36" fill="#92adbd" stroke="white"/>
+<text x="78" y="431" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">7</text>
+<rect x="96" y="406" width="36" height="36" fill="#799aac" stroke="white"/>
+<text x="114" y="431" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="white" text-anchor="middle">9</text>
+<rect x="132" y="406" width="36" height="36" fill="#9fb7c5" stroke="white"/>
+<text x="150" y="431" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">6</text>
+<rect x="24" y="442" width="36" height="36" fill="#c6d5df" stroke="white"/>
+<text x="42" y="467" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">3</text>
+<rect x="60" y="442" width="36" height="36" fill="#92adbd" stroke="white"/>
+<text x="78" y="467" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">7</text>
+<rect x="96" y="442" width="36" height="36" fill="#9fb7c5" stroke="white"/>
+<text x="114" y="467" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">6</text>
+<rect x="132" y="442" width="36" height="36" fill="#86a4b4" stroke="white"/>
+<text x="150" y="467" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">8</text>
+<rect x="24" y="478" width="36" height="36" fill="#b9cbd6" stroke="white"/>
+<text x="42" y="503" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">4</text>
+<rect x="60" y="478" width="36" height="36" fill="#86a4b4" stroke="white"/>
+<text x="78" y="503" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">8</text>
+<rect x="96" y="478" width="36" height="36" fill="#e0e9f0" stroke="white"/>
+<text x="114" y="503" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">1</text>
+<rect x="132" y="478" width="36" height="36" fill="#92adbd" stroke="white"/>
+<text x="150" y="503" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">7</text>
+</g>
+<g id="case-1589-FedNearPU">
+<rect x="172" y="370" width="370" height="35" fill="#e2f3e8"/>
+<rect x="172" y="370" width="167" height="35" fill="#d2eadd"/>
+<text x="179" y="396" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">FedNearPU</text>
+<text x="347" y="396" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 512 388 l 6 6 l 13 -16" fill="none" stroke="#00a66c" stroke-width="3"/>
+</g>
+<g id="case-1589-FixMatch">
+<rect x="172" y="406" width="370" height="35" fill="#fff0f0"/>
+<rect x="172" y="406" width="167" height="35" fill="#edf2f6"/>
+<text x="179" y="432" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FixMatch</text>
+<text x="347" y="432" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 513 418 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-1589-FreeMatch">
+<rect x="172" y="442" width="370" height="35" fill="#fff0f0"/>
+<rect x="172" y="442" width="167" height="35" fill="#edf2f6"/>
+<text x="179" y="468" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FreeMatch</text>
+<text x="347" y="468" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 513 454 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-1589-MeanTeacher">
+<rect x="172" y="478" width="370" height="35" fill="#fff0f0"/>
+<rect x="172" y="478" width="167" height="35" fill="#edf2f6"/>
+<text x="179" y="504" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">MeanTeacher</text>
+<text x="347" y="504" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 513 490 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<rect x="32" y="523" width="11" height="11" fill="#ddbd62"/>
+<text x="50" y="538" font-family="Comic Sans MS" font-size="22" font-weight="bold" fill="#243b49" text-anchor="start">GT: Negative · N</text>
+<text x="531" y="538" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="end">Test #1589</text>
+</g>
+<g id="case-1430">
+<rect x="566" y="370" width="518" height="174" fill="#fff" stroke="#c8d5dd"/>
+<g id="features-1430">
+<rect x="566" y="370" width="36" height="36" fill="#c6d5df" stroke="white"/>
+<text x="584" y="395" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">3</text>
+<rect x="602" y="370" width="36" height="36" fill="#92adbd" stroke="white"/>
+<text x="620" y="395" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">7</text>
+<rect x="638" y="370" width="36" height="36" fill="#acc1ce" stroke="white"/>
+<text x="656" y="395" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">5</text>
+<rect x="674" y="370" width="36" height="36" fill="#acc1ce" stroke="white"/>
+<text x="692" y="395" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">5</text>
+<rect x="566" y="406" width="36" height="36" fill="#b9cbd6" stroke="white"/>
+<text x="584" y="431" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">4</text>
+<rect x="602" y="406" width="36" height="36" fill="#86a4b4" stroke="white"/>
+<text x="620" y="431" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">8</text>
+<rect x="638" y="406" width="36" height="36" fill="#9fb7c5" stroke="white"/>
+<text x="656" y="431" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">6</text>
+<rect x="674" y="406" width="36" height="36" fill="#acc1ce" stroke="white"/>
+<text x="692" y="431" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">5</text>
+<rect x="566" y="442" width="36" height="36" fill="#b9cbd6" stroke="white"/>
+<text x="584" y="467" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">4</text>
+<rect x="602" y="442" width="36" height="36" fill="#9fb7c5" stroke="white"/>
+<text x="620" y="467" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">6</text>
+<rect x="638" y="442" width="36" height="36" fill="#86a4b4" stroke="white"/>
+<text x="656" y="467" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">8</text>
+<rect x="674" y="442" width="36" height="36" fill="#92adbd" stroke="white"/>
+<text x="692" y="467" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">7</text>
+<rect x="566" y="478" width="36" height="36" fill="#d3dfe7" stroke="white"/>
+<text x="584" y="503" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">2</text>
+<rect x="602" y="478" width="36" height="36" fill="#86a4b4" stroke="white"/>
+<text x="620" y="503" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">8</text>
+<rect x="638" y="478" width="36" height="36" fill="#86a4b4" stroke="white"/>
+<text x="656" y="503" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">8</text>
+<rect x="674" y="478" width="36" height="36" fill="#b9cbd6" stroke="white"/>
+<text x="692" y="503" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">4</text>
+</g>
+<g id="case-1430-FedNearPU">
+<rect x="714" y="370" width="370" height="35" fill="#e2f3e8"/>
+<rect x="714" y="370" width="167" height="35" fill="#d2eadd"/>
+<text x="721" y="396" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">FedNearPU</text>
+<text x="889" y="396" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 1054 388 l 6 6 l 13 -16" fill="none" stroke="#00a66c" stroke-width="3"/>
+</g>
+<g id="case-1430-FixMatch">
+<rect x="714" y="406" width="370" height="35" fill="#fff0f0"/>
+<rect x="714" y="406" width="167" height="35" fill="#edf2f6"/>
+<text x="721" y="432" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FixMatch</text>
+<text x="889" y="432" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 1055 418 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-1430-FreeMatch">
+<rect x="714" y="442" width="370" height="35" fill="#fff0f0"/>
+<rect x="714" y="442" width="167" height="35" fill="#edf2f6"/>
+<text x="721" y="468" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FreeMatch</text>
+<text x="889" y="468" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 1055 454 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-1430-MeanTeacher">
+<rect x="714" y="478" width="370" height="35" fill="#fff0f0"/>
+<rect x="714" y="478" width="167" height="35" fill="#edf2f6"/>
+<text x="721" y="504" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">MeanTeacher</text>
+<text x="889" y="504" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 1055 490 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<rect x="574" y="523" width="11" height="11" fill="#ddbd62"/>
+<text x="592" y="538" font-family="Comic Sans MS" font-size="22" font-weight="bold" fill="#243b49" text-anchor="start">GT: Negative · Y</text>
+<text x="1073" y="538" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="end">Test #1430</text>
+</g>
+<g id="case-3813">
+<rect x="1108" y="370" width="518" height="174" fill="#fff" stroke="#c8d5dd"/>
+<g id="features-3813">
+<rect x="1108" y="370" width="36" height="36" fill="#5f869b" stroke="white"/>
+<text x="1126" y="395" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="white" text-anchor="middle">11</text>
+<rect x="1144" y="370" width="36" height="36" fill="#527c92" stroke="white"/>
+<text x="1162" y="395" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="white" text-anchor="middle">12</text>
+<rect x="1180" y="370" width="36" height="36" fill="#5f869b" stroke="white"/>
+<text x="1198" y="395" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="white" text-anchor="middle">11</text>
+<rect x="1216" y="370" width="36" height="36" fill="#9fb7c5" stroke="white"/>
+<text x="1234" y="395" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">6</text>
+<rect x="1108" y="406" width="36" height="36" fill="#acc1ce" stroke="white"/>
+<text x="1126" y="431" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">5</text>
+<rect x="1144" y="406" width="36" height="36" fill="#92adbd" stroke="white"/>
+<text x="1162" y="431" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">7</text>
+<rect x="1180" y="406" width="36" height="36" fill="#6c90a3" stroke="white"/>
+<text x="1198" y="431" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="white" text-anchor="middle">10</text>
+<rect x="1216" y="406" width="36" height="36" fill="#acc1ce" stroke="white"/>
+<text x="1234" y="431" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">5</text>
+<rect x="1108" y="442" width="36" height="36" fill="#b9cbd6" stroke="white"/>
+<text x="1126" y="467" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">4</text>
+<rect x="1144" y="442" width="36" height="36" fill="#b9cbd6" stroke="white"/>
+<text x="1162" y="467" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">4</text>
+<rect x="1180" y="442" width="36" height="36" fill="#acc1ce" stroke="white"/>
+<text x="1198" y="467" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">5</text>
+<rect x="1216" y="442" width="36" height="36" fill="#5f869b" stroke="white"/>
+<text x="1234" y="467" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="white" text-anchor="middle">11</text>
+<rect x="1108" y="478" width="36" height="36" fill="#5f869b" stroke="white"/>
+<text x="1126" y="503" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="white" text-anchor="middle">11</text>
+<rect x="1144" y="478" width="36" height="36" fill="#45728a" stroke="white"/>
+<text x="1162" y="503" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="white" text-anchor="middle">13</text>
+<rect x="1180" y="478" width="36" height="36" fill="#d3dfe7" stroke="white"/>
+<text x="1198" y="503" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">2</text>
+<rect x="1216" y="478" width="36" height="36" fill="#92adbd" stroke="white"/>
+<text x="1234" y="503" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="middle">7</text>
+</g>
+<g id="case-3813-FedNearPU">
+<rect x="1256" y="370" width="370" height="35" fill="#e2f3e8"/>
+<rect x="1256" y="370" width="167" height="35" fill="#d2eadd"/>
+<text x="1263" y="396" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">FedNearPU</text>
+<text x="1431" y="396" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 1596 388 l 6 6 l 13 -16" fill="none" stroke="#00a66c" stroke-width="3"/>
+</g>
+<g id="case-3813-FixMatch">
+<rect x="1256" y="406" width="370" height="35" fill="#fff0f0"/>
+<rect x="1256" y="406" width="167" height="35" fill="#edf2f6"/>
+<text x="1263" y="432" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FixMatch</text>
+<text x="1431" y="432" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 1597 418 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-3813-FreeMatch">
+<rect x="1256" y="442" width="370" height="35" fill="#fff0f0"/>
+<rect x="1256" y="442" width="167" height="35" fill="#edf2f6"/>
+<text x="1263" y="468" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FreeMatch</text>
+<text x="1431" y="468" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 1597 454 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-3813-MeanTeacher">
+<rect x="1256" y="478" width="370" height="35" fill="#fff0f0"/>
+<rect x="1256" y="478" width="167" height="35" fill="#edf2f6"/>
+<text x="1263" y="504" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">MeanTeacher</text>
+<text x="1431" y="504" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 1597 490 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<rect x="1116" y="523" width="11" height="11" fill="#ddbd62"/>
+<text x="1134" y="538" font-family="Comic Sans MS" font-size="22" font-weight="bold" fill="#243b49" text-anchor="start">GT: Negative · M</text>
+<text x="1615" y="538" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="end">Test #3813</text>
+</g>
+<text x="24" y="574" font-family="Comic Sans MS" font-size="21" font-weight="normal" fill="#243b49" text-anchor="start">Input: 16 raw features (f1–f16, row-major). Cell shading uses a shared 0–15 scale.</text>
+<text x="24" y="604" font-family="Comic Sans MS" font-size="21" font-weight="normal" fill="#243b49" text-anchor="start">Six selected success cases: FedNearPU correct, all three compared baselines incorrect.</text>
+<text x="24" y="634" font-family="Comic Sans MS" font-size="21" font-weight="normal" fill="#243b49" text-anchor="start">Same independent test set; training client partitions differ. These cases do not establish an overall ranking.</text>
+</svg>

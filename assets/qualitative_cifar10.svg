@@ -1,0 +1,229 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1650" height="620" viewBox="0 0 1650 620">
+<title>Selected CIFAR-10 test predictions</title>
+<desc>Six deliberately selected test cases where FedNearPU is correct and all three compared PU-adapted SSL baselines are wrong. Different training client partitions; identical test samples and threshold 0.5.</desc>
+<rect x="0" y="0" width="1650" height="620" fill="white"/>
+<text x="24" y="35" font-family="Comic Sans MS" font-size="30" font-weight="bold" fill="#243b49" text-anchor="start">CIFAR-10</text>
+<text x="195" y="35" font-family="Comic Sans MS" font-size="27" font-weight="normal" fill="#243b49" text-anchor="start">Selected test predictions</text>
+<text x="1626" y="35" font-family="Comic Sans MS" font-size="24" font-weight="normal" fill="#243b49" text-anchor="end">η = 0.25  ·  seed = 0  ·  threshold = 0.5</text>
+<text x="24" y="76" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Test-set composition</text>
+<rect x="302" y="53" width="662.0" height="32" fill="#8bcdb5"/>
+<rect x="964.0" y="53" width="662.0" height="32" fill="#ebcf7b"/>
+<text x="633.0" y="77" font-family="Comic Sans MS" font-size="21" font-weight="bold" fill="#243b49" text-anchor="middle">Positive  50.0%  (n = 5000)</text>
+<text x="1295.0" y="77" font-family="Comic Sans MS" font-size="21" font-weight="bold" fill="#243b49" text-anchor="middle">Negative  50.0%  (n = 5000)</text>
+<text x="24" y="124" font-family="Comic Sans MS" font-size="27" font-weight="bold" fill="#243b49" text-anchor="start">Positive examples</text>
+<text x="1626" y="124" font-family="Comic Sans MS" font-size="21" font-weight="normal" fill="#243b49" text-anchor="end">70 matching cases in the test set</text>
+<g id="case-9262">
+<rect x="24" y="138" width="518" height="174" fill="#fff" stroke="#c8d5dd"/>
+<image id="sample-9262" x="24" y="138" width="144" height="144" xlink:href="data:image/png;base64,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"/>
+<g id="case-9262-FedNearPU">
+<rect x="172" y="138" width="370" height="35" fill="#e2f3e8"/>
+<rect x="172" y="138" width="167" height="35" fill="#d2eadd"/>
+<text x="179" y="164" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">FedNearPU</text>
+<text x="347" y="164" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 512 156 l 6 6 l 13 -16" fill="none" stroke="#00a66c" stroke-width="3"/>
+</g>
+<g id="case-9262-FixMatch">
+<rect x="172" y="174" width="370" height="35" fill="#fff0f0"/>
+<rect x="172" y="174" width="167" height="35" fill="#edf2f6"/>
+<text x="179" y="200" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FixMatch</text>
+<text x="347" y="200" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 513 186 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-9262-FreeMatch">
+<rect x="172" y="210" width="370" height="35" fill="#fff0f0"/>
+<rect x="172" y="210" width="167" height="35" fill="#edf2f6"/>
+<text x="179" y="236" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FreeMatch</text>
+<text x="347" y="236" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 513 222 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-9262-MeanTeacher">
+<rect x="172" y="246" width="370" height="35" fill="#fff0f0"/>
+<rect x="172" y="246" width="167" height="35" fill="#edf2f6"/>
+<text x="179" y="272" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">MeanTeacher</text>
+<text x="347" y="272" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 513 258 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<rect x="32" y="291" width="11" height="11" fill="#79bda5"/>
+<text x="50" y="306" font-family="Comic Sans MS" font-size="22" font-weight="bold" fill="#243b49" text-anchor="start">GT: Positive</text>
+<text x="531" y="306" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="end">Test #9262</text>
+</g>
+<g id="case-2898">
+<rect x="566" y="138" width="518" height="174" fill="#fff" stroke="#c8d5dd"/>
+<image id="sample-2898" x="566" y="138" width="144" height="144" xlink:href="data:image/png;base64,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"/>
+<g id="case-2898-FedNearPU">
+<rect x="714" y="138" width="370" height="35" fill="#e2f3e8"/>
+<rect x="714" y="138" width="167" height="35" fill="#d2eadd"/>
+<text x="721" y="164" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">FedNearPU</text>
+<text x="889" y="164" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 1054 156 l 6 6 l 13 -16" fill="none" stroke="#00a66c" stroke-width="3"/>
+</g>
+<g id="case-2898-FixMatch">
+<rect x="714" y="174" width="370" height="35" fill="#fff0f0"/>
+<rect x="714" y="174" width="167" height="35" fill="#edf2f6"/>
+<text x="721" y="200" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FixMatch</text>
+<text x="889" y="200" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 1055 186 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-2898-FreeMatch">
+<rect x="714" y="210" width="370" height="35" fill="#fff0f0"/>
+<rect x="714" y="210" width="167" height="35" fill="#edf2f6"/>
+<text x="721" y="236" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FreeMatch</text>
+<text x="889" y="236" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 1055 222 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-2898-MeanTeacher">
+<rect x="714" y="246" width="370" height="35" fill="#fff0f0"/>
+<rect x="714" y="246" width="167" height="35" fill="#edf2f6"/>
+<text x="721" y="272" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">MeanTeacher</text>
+<text x="889" y="272" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 1055 258 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<rect x="574" y="291" width="11" height="11" fill="#79bda5"/>
+<text x="592" y="306" font-family="Comic Sans MS" font-size="22" font-weight="bold" fill="#243b49" text-anchor="start">GT: Positive</text>
+<text x="1073" y="306" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="end">Test #2898</text>
+</g>
+<g id="case-8877">
+<rect x="1108" y="138" width="518" height="174" fill="#fff" stroke="#c8d5dd"/>
+<image id="sample-8877" x="1108" y="138" width="144" height="144" xlink:href="data:image/png;base64,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"/>
+<g id="case-8877-FedNearPU">
+<rect x="1256" y="138" width="370" height="35" fill="#e2f3e8"/>
+<rect x="1256" y="138" width="167" height="35" fill="#d2eadd"/>
+<text x="1263" y="164" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">FedNearPU</text>
+<text x="1431" y="164" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 1596 156 l 6 6 l 13 -16" fill="none" stroke="#00a66c" stroke-width="3"/>
+</g>
+<g id="case-8877-FixMatch">
+<rect x="1256" y="174" width="370" height="35" fill="#fff0f0"/>
+<rect x="1256" y="174" width="167" height="35" fill="#edf2f6"/>
+<text x="1263" y="200" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FixMatch</text>
+<text x="1431" y="200" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 1597 186 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-8877-FreeMatch">
+<rect x="1256" y="210" width="370" height="35" fill="#fff0f0"/>
+<rect x="1256" y="210" width="167" height="35" fill="#edf2f6"/>
+<text x="1263" y="236" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FreeMatch</text>
+<text x="1431" y="236" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 1597 222 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-8877-MeanTeacher">
+<rect x="1256" y="246" width="370" height="35" fill="#fff0f0"/>
+<rect x="1256" y="246" width="167" height="35" fill="#edf2f6"/>
+<text x="1263" y="272" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">MeanTeacher</text>
+<text x="1431" y="272" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 1597 258 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<rect x="1116" y="291" width="11" height="11" fill="#79bda5"/>
+<text x="1134" y="306" font-family="Comic Sans MS" font-size="22" font-weight="bold" fill="#243b49" text-anchor="start">GT: Positive</text>
+<text x="1615" y="306" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="end">Test #8877</text>
+</g>
+<text x="24" y="356" font-family="Comic Sans MS" font-size="27" font-weight="bold" fill="#243b49" text-anchor="start">Negative examples</text>
+<text x="1626" y="356" font-family="Comic Sans MS" font-size="21" font-weight="normal" fill="#243b49" text-anchor="end">426 matching cases in the test set</text>
+<g id="case-4652">
+<rect x="24" y="370" width="518" height="174" fill="#fff" stroke="#c8d5dd"/>
+<image id="sample-4652" x="24" y="370" width="144" height="144" xlink:href="data:image/png;base64,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"/>
+<g id="case-4652-FedNearPU">
+<rect x="172" y="370" width="370" height="35" fill="#e2f3e8"/>
+<rect x="172" y="370" width="167" height="35" fill="#d2eadd"/>
+<text x="179" y="396" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">FedNearPU</text>
+<text x="347" y="396" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 512 388 l 6 6 l 13 -16" fill="none" stroke="#00a66c" stroke-width="3"/>
+</g>
+<g id="case-4652-FixMatch">
+<rect x="172" y="406" width="370" height="35" fill="#fff0f0"/>
+<rect x="172" y="406" width="167" height="35" fill="#edf2f6"/>
+<text x="179" y="432" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FixMatch</text>
+<text x="347" y="432" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 513 418 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-4652-FreeMatch">
+<rect x="172" y="442" width="370" height="35" fill="#fff0f0"/>
+<rect x="172" y="442" width="167" height="35" fill="#edf2f6"/>
+<text x="179" y="468" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FreeMatch</text>
+<text x="347" y="468" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 513 454 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-4652-MeanTeacher">
+<rect x="172" y="478" width="370" height="35" fill="#fff0f0"/>
+<rect x="172" y="478" width="167" height="35" fill="#edf2f6"/>
+<text x="179" y="504" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">MeanTeacher</text>
+<text x="347" y="504" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 513 490 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<rect x="32" y="523" width="11" height="11" fill="#ddbd62"/>
+<text x="50" y="538" font-family="Comic Sans MS" font-size="22" font-weight="bold" fill="#243b49" text-anchor="start">GT: Negative</text>
+<text x="531" y="538" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="end">Test #4652</text>
+</g>
+<g id="case-3325">
+<rect x="566" y="370" width="518" height="174" fill="#fff" stroke="#c8d5dd"/>
+<image id="sample-3325" x="566" y="370" width="144" height="144" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAIUElEQVR4nKVWW48cRxU+p6q6p2d6erp7em67s7vedTLeXLyJYyckOCYGJANO4IUnXgDxr+Ad8cIbEoqEQCTB5IKSKI69vmy8Xu9tdnfuMz3dM91dVYcHO8TCQaBwnkqlo/Od73xVOh+Kt34FRPDNAgmJoebEFKEGwicSUAA+cfs/h9BMA5McheaMULEnGkUU37g6AGhExUAzLQG4/g9N/D8AEglJmkprYJqxrx0F+69VCAABEAEfHoiQCIAACEG6KmtqspUE/HohvwJghACgGCmmNQIBZ5oISHOhiEuZKDljSptKCtCIQJgVdXi1IH8Z4IqKQBFqQtIa4XG1vxoRARAg18A1IIBCIkROWmQzl9GaY+UY242SI0KJBiMupL6Q5z+v5euMbe9F7RBi31OPGCMB/TuAYsQ1mooBIYAGBolhGnLeEvrNwGyVS3W/cuug+4fDzoShyWSaRZcc0bRFONcu0/58EqUW5S2kh90+wYARMAKFkAlkhIw4AdMye2rBe23VKdWKFjefmTB5mOaKLGh4m3cPz2h7Bs4Hxyf7lKY6VfFU2wUu4XE9HgPQSABKaECpSIOiuqRTgirpfGSVSrbNTQObzt77HbuTBkltI8uVQ3PI0yQkGSkmKc9hCsSIadD/+l6PP1OUTDNKqqnOA/mmuroQrAq+eX/3N7/brNSDharbWl2ZuN542F6z0OWlECymZMsr9yPqyTk5xZAICQmJvkQQjDQRU8g1J1+lzws6zaE8Szca1fNPL91o77Sj3v5R93bnqObYh/vHyxXPcyr1tVo6zoYT3Y8zKxybBmXIU2RECAyQowaDAAiUIEBChkSlefRGwbyYQzsbeTZsLHsooL3fOVNZLC8vMct0eW48Dc+urlQMWSmIDDJpGfduHejxhHMzTDEiwZmRyrlWcyDJtLIRBJKZcdWcTX5E8rkUx8e9mM8brRVRtI8Pj1fdslNpfLK/w4U57PZaq8tvffcNMx5FvWNlq3AULRWYX1geTRKxe5D1B4VKueEXi3m7YIjTQfWZoCYIyE2Tb8v0SoEVTbiTN8Nk5jklkEgpuV7JDVz/0L23fVhynFdeeM22rGwGdrEkSsJxnMu2qwfxRx9vNgUuVUuN9eWrly7WgrxlGU0/qBVsAXz2epRe5UZQ4kyI0/4S0QJluHVvDwxxOOw1g/ylKy+9lD1f84OM0db2rUXPQxTEDdPNu9q8ffdwp32yVDR+fPmVs6+/vFItmxzQMlMlhSHF8jz+PrJW0dS2Y3KzXPfn8+xvH368F4eNoFao5v1GpbWxBkQ7n222j47soGqyvNTzWSzniNt397Zu75IyWqvV9bXFhbqbzmOFDNJMM0Rg4ntzvZYnbZsItmEaOc4SAijk0dClhcqbb11xq7ZMRTQOe0ehkHmLWTIjIYqCQf9ksHf/ZJhSsNT81sXznh+MeqHKJBIgkBeUGRjigmV4FiqRTxSNJ6MFR1iOfWb9qVXbrFWC6XjU65/Yjl3xy6fWz5DSaJpS4WA47XfHd+7c2Wp37gz7FTO7YBmfvv9pNJNxHNVr5XqjVio4ylailsuRZRY99/DBXt4rVFaW5kquNxv5SjAdjbN45hiObXrZjMvE6PW6B/v7g3av2w+3B4PN7uEg1cdJ4ibD5Ru3nq4uMG4lGVtZWPPKhTSey04mfCs/0jqf46mceaVaxKDge8SMra17ju3Y3DrZOznpbA0GwzRN4zhSMoVI9qPk/nS0nWYRsNSyklT9/p1rzaCSZOrc2tMvnXuxRDDqD6y8KVCww253bki34tvV8hzBcwqzaLazu1OpNuQ02b5+Nw6zTEpgGE6nhsEMMvppNjWMOOFKAyFqjUdhvB/tKqLjTrcs+M9++kOv5nMGAktFMx4yZgb1Sv3UkttoaBkXLPP1S68y28GMRZPZ7q2dOEmlpERnWopYsCNI2vFYaiU0EmoCIM6UwTXpnGE1/KDaqAfLdUIttJU782wrn3eCxWrO94hUOo2EYM21ZcpZ80n64svnj/fa/VGPcVYq5qXIHUbhdjQcZQkgA9QIpBE1MFSEBCXXNpH3uj2n4dtBSXSHY0zFuWdbKUNIU5yNZBhp05qGU0PgYDSczZJKuTLtjzjnKcftcPpZr9NRqWIcASUSATACxQBJC2B7g961z683G3656uUKpkhBj4fjou/fvH49bxpuyRKGMTnpp0rXA38Sxb2DY4dMx/YPZpO9yfhmt9OXqRTINCIAfWWrHroBCmW21zlpbx8srtQ1kPDq1eUg6HUGLJ6zNBNuMQPGAtdrLk4e9EafPwgfnOx0e3d6nRuDTlsmESVSIBFyeuQsHi0TIABQSJoTAGRh0t09nkZTMUuz07Xazhe3HVKB74/DWFpm5dTKoBfd//vN7Z2Dzf7xjWH3cDyeEKSMaYb669wO0sNVrg2APGNAlM6T51aeF5ZVPNg/KBp8sVbhudzooLdQrcFcX3vnow//cWMrHN3PxmEqM8a0Bq41Z8AICFE9Mlr0JQMQAKTJFWbdsu1SIVfMpXIuOiejnKXXm17BsUKlJWnOzbf/8u5v//zXL+bJFMhQJEAwLfOm4EobxLNMJigzRABAIQCBiOyc5ZrmeDJ9KqhtnG49c/65yqkgg0zst49KOd1qukkGksPycvO9T278+k/vPphEmckBmUZtqPQnL29cfPGslNTf63c63YwRKDoYTd47aWvQoFWZcqv5olEoXt7Y+M6lV1fOnrIsk5JMkJojcsstpIpMq9AP47evffAgjMgwLSUNTIum8YMLr/3iyuVl38sUi5vTaRjNtdTz9I+bN68dtxtmLidozXbOtdZeOPvs+tJisFITtjGLZ3kt/glco5zIUC4pNAAAAABJRU5ErkJggg=="/>
+<g id="case-3325-FedNearPU">
+<rect x="714" y="370" width="370" height="35" fill="#e2f3e8"/>
+<rect x="714" y="370" width="167" height="35" fill="#d2eadd"/>
+<text x="721" y="396" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">FedNearPU</text>
+<text x="889" y="396" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 1054 388 l 6 6 l 13 -16" fill="none" stroke="#00a66c" stroke-width="3"/>
+</g>
+<g id="case-3325-FixMatch">
+<rect x="714" y="406" width="370" height="35" fill="#fff0f0"/>
+<rect x="714" y="406" width="167" height="35" fill="#edf2f6"/>
+<text x="721" y="432" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FixMatch</text>
+<text x="889" y="432" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 1055 418 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-3325-FreeMatch">
+<rect x="714" y="442" width="370" height="35" fill="#fff0f0"/>
+<rect x="714" y="442" width="167" height="35" fill="#edf2f6"/>
+<text x="721" y="468" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FreeMatch</text>
+<text x="889" y="468" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 1055 454 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-3325-MeanTeacher">
+<rect x="714" y="478" width="370" height="35" fill="#fff0f0"/>
+<rect x="714" y="478" width="167" height="35" fill="#edf2f6"/>
+<text x="721" y="504" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">MeanTeacher</text>
+<text x="889" y="504" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 1055 490 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<rect x="574" y="523" width="11" height="11" fill="#ddbd62"/>
+<text x="592" y="538" font-family="Comic Sans MS" font-size="22" font-weight="bold" fill="#243b49" text-anchor="start">GT: Negative</text>
+<text x="1073" y="538" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="end">Test #3325</text>
+</g>
+<g id="case-1708">
+<rect x="1108" y="370" width="518" height="174" fill="#fff" stroke="#c8d5dd"/>
+<image id="sample-1708" x="1108" y="370" width="144" height="144" xlink:href="data:image/png;base64,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"/>
+<g id="case-1708-FedNearPU">
+<rect x="1256" y="370" width="370" height="35" fill="#e2f3e8"/>
+<rect x="1256" y="370" width="167" height="35" fill="#d2eadd"/>
+<text x="1263" y="396" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">FedNearPU</text>
+<text x="1431" y="396" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Negative</text>
+<path d="M 1596 388 l 6 6 l 13 -16" fill="none" stroke="#00a66c" stroke-width="3"/>
+</g>
+<g id="case-1708-FixMatch">
+<rect x="1256" y="406" width="370" height="35" fill="#fff0f0"/>
+<rect x="1256" y="406" width="167" height="35" fill="#edf2f6"/>
+<text x="1263" y="432" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FixMatch</text>
+<text x="1431" y="432" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 1597 418 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-1708-FreeMatch">
+<rect x="1256" y="442" width="370" height="35" fill="#fff0f0"/>
+<rect x="1256" y="442" width="167" height="35" fill="#edf2f6"/>
+<text x="1263" y="468" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">FreeMatch</text>
+<text x="1431" y="468" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 1597 454 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<g id="case-1708-MeanTeacher">
+<rect x="1256" y="478" width="370" height="35" fill="#fff0f0"/>
+<rect x="1256" y="478" width="167" height="35" fill="#edf2f6"/>
+<text x="1263" y="504" font-family="Comic Sans MS" font-size="23" font-weight="normal" fill="#243b49" text-anchor="start">MeanTeacher</text>
+<text x="1431" y="504" font-family="Comic Sans MS" font-size="23" font-weight="bold" fill="#243b49" text-anchor="start">Positive</text>
+<path d="M 1597 490 l 16 16 m 0 -16 l -16 16" fill="none" stroke="#e65050" stroke-width="2.6"/>
+</g>
+<rect x="1116" y="523" width="11" height="11" fill="#ddbd62"/>
+<text x="1134" y="538" font-family="Comic Sans MS" font-size="22" font-weight="bold" fill="#243b49" text-anchor="start">GT: Negative</text>
+<text x="1615" y="538" font-family="Comic Sans MS" font-size="20" font-weight="normal" fill="#243b49" text-anchor="end">Test #1708</text>
+</g>
+<text x="24" y="574" font-family="Comic Sans MS" font-size="21" font-weight="normal" fill="#243b49" text-anchor="start">Six selected success cases: FedNearPU correct, all three compared baselines incorrect.</text>
+<text x="24" y="604" font-family="Comic Sans MS" font-size="21" font-weight="normal" fill="#243b49" text-anchor="start">Same independent test set; training client partitions differ. These cases do not establish an overall ranking.</text>
+</svg>
